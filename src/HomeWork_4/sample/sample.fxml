@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="HomeWork_4.sample.Controller">
+    <Label text="Чат" />
+    <TextArea fx:id="chat" prefHeight="300.0" prefWidth="300.0" />
+    <Label text="Ввод сообщения" />
+    <TextField fx:id="text_for_chat" onAction="#send" prefHeight="50.0" prefWidth="200.0" />
+    <Button fx:id="btn" onAction="#send" onKeyPressed="#send" text="Отправить" />
+
+</VBox>
