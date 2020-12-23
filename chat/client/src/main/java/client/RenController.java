@@ -1,4 +1,4 @@
-package clietn;
+package client;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -6,7 +6,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class RegController {
+public class RenController {
     @FXML
     public TextField loginField;
     @FXML
@@ -18,8 +18,8 @@ public class RegController {
 
     private Controller controller;
 
-    public void tryToReg(ActionEvent actionEvent) {
-        controller.tryToReg(loginField.getText().trim(),
+    public void tryToRen(ActionEvent actionEvent) {
+        controller.tryToRen(loginField.getText().trim(),
                 passwordField.getText().trim(),
                 nickField.getText().trim());
     }
